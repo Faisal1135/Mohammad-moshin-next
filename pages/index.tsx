@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
-import AppBar from "../components/Head/MyNavbar/AppBar";
+
+import Header from "../components/Header/Header";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <AppBar />
+      <Header />
     </div>
   );
 };

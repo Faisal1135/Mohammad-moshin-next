@@ -1,27 +1,48 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavDropdown,
+  Button,
+  Image,
+} from "react-bootstrap";
 import styles from "./Appbar.module.css";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+
+export const fromUpFade: Variants = {
+  initial: {
+    y: 40,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      type: "spring",
+    },
+  },
+};
 
 const AppBar = () => {
   return (
-    <motion.div
-      animate={{
-        y: "0",
-        opacity: 1,
-        transition: { duration: 1 },
-      }}
-      initial={{ y: "100vh", opacity: 0 }}
-    >
-      <Navbar
-        bg="dark"
-        expand="md"
-        variant="dark"
-        className={`${styles.navBack} `}
-      >
+    <motion.div variants={fromUpFade}>
+      <Navbar bg="transparent" expand="md" variant="light">
         <Container fluid>
-          <Navbar.Brand className="text-white ms-4 ">
-            <motion.div> Mohammad Moshin PPM</motion.div>
+          <Navbar.Brand className="ms-4">
+            <motion.div>
+              {" "}
+              <span>
+                <Image
+                  src="/images/logo.jpg"
+                  width="90px"
+                  height="50px"
+                  alt="logo"
+                  className="rounded-circle"
+                />
+              </span>
+            </motion.div>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -31,7 +52,7 @@ const AppBar = () => {
             className="justify-content-end"
           >
             <Nav className="">
-              <Nav.Item>
+              <Nav.Item className="align-self-lg-start">
                 <Nav.Link>
                   <motion.div
                     whileHover={{
