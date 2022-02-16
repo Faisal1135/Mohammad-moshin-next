@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { Image } from "react-bootstrap";
 import { motion, Variants } from "framer-motion";
 import { fromLeftFade, staggerContainer } from "../Header/Header";
 import s from "./About.module.css";
