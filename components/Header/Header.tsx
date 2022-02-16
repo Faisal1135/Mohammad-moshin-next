@@ -62,8 +62,43 @@ const Header = () => {
       whileInView="animate"
     >
       <AppBar />
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-5">
+            <div className="d-flex flex-column h-100 justify-content-center px-2">
+              <motion.h1 variants={fromLeftFade()} className="text-white">
+                Mohammad Moshin <br />{" "}
+                <span className="text-center text-muted">PPM </span>
+              </motion.h1>
+              <motion.p className="text-light lead" variants={fromLeftFade()}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quia
+                praesentium magnam id labore in placeat, autem debitis eius
+                libero!
+              </motion.p>
+              <Link href="/posts/" passHref>
+                <motion.button
+                  className={s.content_btn}
+                  variants={fromLeftFade("right")}
+                >
+                  Read More
+                </motion.button>
+              </Link>
+            </div>
+          </div>
+          <div className="col-lg-7">
+            <motion.img
+              src="/images/cover.png"
+              alt="feature_img"
+              className={`img-fluid ${s.img_w}`}
+              variants={featureImageScale}
+              initial="initial"
+              animate="animate"
+            />
+          </div>
+        </div>
+      </div>
 
-      <div className={s.content}>
+      {/* <div className={s.content}>
         <motion.h1 className={s.content_h1} variants={fromLeftFade()}>
           Mohammad Moshin <br />{" "}
           <span className="text-center text-muted">PPM </span>
@@ -89,7 +124,7 @@ const Header = () => {
           initial="initial"
           animate="animate"
         />
-      </div>
+      </div> */}
     </motion.div>
   );
 };

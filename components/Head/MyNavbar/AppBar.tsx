@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { motion, Variants } from "framer-motion";
 import { staggerContainer } from "../../Header/Header";
+import s from "./Appbar.module.css";
 
 export const fromUpFade: (direction?: "up" | "down") => Variants = (
   direction: "up" | "down" = "up"
@@ -36,7 +37,7 @@ const AppBar = () => {
       initial="initial"
       whileInView="animate"
     >
-      <Navbar bg="transparent" expand="md" variant="light">
+      <Navbar bg="transparent" expand="md" variant="dark">
         <Container fluid>
           <Navbar.Brand className="ms-4">
             <motion.div variants={fromUpFade()}>
@@ -44,10 +45,8 @@ const AppBar = () => {
               <span>
                 <Image
                   src="/images/logo.jpg"
-                  width="90px"
-                  height="50px"
                   alt="logo"
-                  className="rounded-circle"
+                  className={`rounded-circle img-fluid w-25 ${s.logo}`}
                 />
               </span>
             </motion.div>

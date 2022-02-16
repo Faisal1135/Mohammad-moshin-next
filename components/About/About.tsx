@@ -115,116 +115,180 @@ export const RecentPost = () => {
     >
       <div className="container px-4 py-5" id="custom-cards">
         <h2 className="pb-2 border-bottom">Recent Posts</h2>
-
-        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <motion.div className="col" variants={recentPostVarient}>
-            <div
-              className={` card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg  `}
-              style={{
-                backgroundImage: `url(${"https://firebasestorage.googleapis.com/v0/b/mohmad-moshsin.appspot.com/o/images%2F251648361_991716388226038_60699920385879068_n.jpg?alt=media&token=02daa629-6430-4874-8fb8-057fb8ca32c3"})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold ">
-                  <div className="bg-dark bg-opacity-25">
-                    যে থানায় স্বাগত জানানো হয় গোলাপ ফুলে,
-                  </div>
-                </h2>
-                <ul className="d-flex list-unstyled mt-auto">
-                  <li className="me-auto">
-                    {/* <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      className="rounded-circle border border-white"
-                    /> */}
-                  </li>
-                  <li className="d-flex align-items-center me-3">
-                    <small>Social Media</small>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <small>3d</small>
-                  </li>
-                </ul>
+        <div className="row">
+          <div className="col-lg-4 col-sm-6">
+            <div className="card">
+              <Image
+                className="card-img-top"
+                src="https://firebasestorage.googleapis.com/v0/b/mohmad-moshsin.appspot.com/o/images%2F251648361_991716388226038_60699920385879068_n.jpg?alt=media&token=02daa629-6430-4874-8fb8-057fb8ca32c3"
+                alt="Recent post 1"
+              />
+              <div className="card-body">
+                <h5 className="card-title fw-bold">
+                  {" "}
+                  যে থানায় স্বাগত জানানো হয় গোলাপ ফুলে
+                </h5>
+                <p className="card-text text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Molestias ad omnis vel quis nesciunt neque asperiores fugiat
+                  aperiam deleniti veritatis, magnam eaque fuga cum eius.
+                </p>
+                <div className="btn btn-outline-primary">More</div>
               </div>
             </div>
-          </motion.div>
-
-          <motion.div className="col" variants={recentPostVarient}>
-            <div
-              className={` card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg   `}
-              style={{
-                backgroundImage: `url(${"https://firebasestorage.googleapis.com/v0/b/mohmad-moshsin.appspot.com/o/images%2FFB_IMG_1643895677331.jpg?alt=media&token=b79a02d4-dfad-4635-9411-84b7a885ee02"})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  উচ্চশিক্ষার সুযোগ
-                </h2>
-                <ul className="d-flex list-unstyled mt-auto">
-                  <li className="me-auto">
-                    {/* <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      className="rounded-circle border border-white"
-                    /> */}
-                  </li>
-                  <li className="d-flex align-items-center me-3">
-                    <small>Police Activity</small>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <small>4d</small>
-                  </li>
-                </ul>
+          </div>
+          <div className="col-lg-4  col-sm-6">
+            <div className="card">
+              <Image
+                className="card-img-top"
+                src="https://firebasestorage.googleapis.com/v0/b/mohmad-moshsin.appspot.com/o/images%2FFB_IMG_1643895677331.jpg?alt=media&token=b79a02d4-dfad-4635-9411-84b7a885ee02"
+                alt="Recent post 2"
+              />
+              <div className="card-body">
+                <h5 className="card-title fw-bold"> উচ্চশিক্ষার সুযোগ</h5>
+                <p className="card-text text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Molestias ad omnis vel quis nesciunt neque asperiores fugiat
+                  aperiam deleniti veritatis, magnam eaque fuga cum eius.
+                </p>
+                <div className="btn btn-outline-primary">More</div>
               </div>
             </div>
-          </motion.div>
-
-          <motion.div className="col" variants={recentPostVarient}>
-            <div
-              className={` card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg `}
-              style={{
-                backgroundImage: `url(${"https://source.unsplash.com/random"})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                  Another longer title belongs here
-                </h2>
-                <ul className="d-flex list-unstyled mt-auto">
-                  <li className="me-auto">
-                    {/* <img
-                      src="https://github.com/twbs.png"
-                      alt="Bootstrap"
-                      width="32"
-                      height="32"
-                      className="rounded-circle border border-white"
-                    /> */}
-                  </li>
-                  <li className="d-flex align-items-center me-3">
-                    <small className="bg-dark bg-opacity-50">Award</small>
-                  </li>
-                  <li className="d-flex align-items-center">
-                    <small>5d</small>
-                  </li>
-                </ul>
+          </div>
+          <div className="col-lg-4 col-sm-6">
+            <div className="card">
+              <Image
+                className="card-img-top"
+                src="https://source.unsplash.com/random"
+                alt="Recent post 1"
+              />
+              <div className="card-body">
+                <h5 className="card-title fw-bold">
+                  {" "}
+                  যে থানায় স্বাগত জানানো হয় গোলাপ ফুলে
+                </h5>
+                <p className="card-text text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Molestias ad omnis vel quis nesciunt neque asperiores fugiat
+                  aperiam deleniti veritatis, magnam eaque fuga cum eius.
+                </p>
+                <div className="btn btn-outline-primary">More</div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </motion.div>
   );
 };
+
+//
+<div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+  <motion.div className="col" variants={recentPostVarient}>
+    <div
+      className={` card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg  `}
+      style={{
+        backgroundImage: `url(${"https://firebasestorage.googleapis.com/v0/b/mohmad-moshsin.appspot.com/o/images%2F251648361_991716388226038_60699920385879068_n.jpg?alt=media&token=02daa629-6430-4874-8fb8-057fb8ca32c3"})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold ">
+          <div className="bg-dark bg-opacity-25">
+            যে থানায় স্বাগত জানানো হয় গোলাপ ফুলে,
+          </div>
+        </h2>
+        <ul className="d-flex list-unstyled mt-auto">
+          <li className="me-auto">
+            {/* <img
+            src="https://github.com/twbs.png"
+            alt="Bootstrap"
+            width="32"
+            height="32"
+            className="rounded-circle border border-white"
+          /> */}
+          </li>
+          <li className="d-flex align-items-center me-3">
+            <small>Social Media</small>
+          </li>
+          <li className="d-flex align-items-center">
+            <small>3d</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </motion.div>
+
+  <motion.div className="col" variants={recentPostVarient}>
+    <div
+      className={` card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg   `}
+      style={{
+        backgroundImage: `url(${"https://firebasestorage.googleapis.com/v0/b/mohmad-moshsin.appspot.com/o/images%2FFB_IMG_1643895677331.jpg?alt=media&token=b79a02d4-dfad-4635-9411-84b7a885ee02"})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+          উচ্চশিক্ষার সুযোগ
+        </h2>
+        <ul className="d-flex list-unstyled mt-auto">
+          <li className="me-auto">
+            {/* <img
+            src="https://github.com/twbs.png"
+            alt="Bootstrap"
+            width="32"
+            height="32"
+            className="rounded-circle border border-white"
+          /> */}
+          </li>
+          <li className="d-flex align-items-center me-3">
+            <small>Police Activity</small>
+          </li>
+          <li className="d-flex align-items-center">
+            <small>4d</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </motion.div>
+
+  <motion.div className="col" variants={recentPostVarient}>
+    <div
+      className={` card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg `}
+      style={{
+        backgroundImage: `url(${"https://source.unsplash.com/random"})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+        <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+          Another longer title belongs here
+        </h2>
+        <ul className="d-flex list-unstyled mt-auto">
+          <li className="me-auto">
+            {/* <img
+            src="https://github.com/twbs.png"
+            alt="Bootstrap"
+            width="32"
+            height="32"
+            className="rounded-circle border border-white"
+          /> */}
+          </li>
+          <li className="d-flex align-items-center me-3">
+            <small className="bg-dark bg-opacity-50">Award</small>
+          </li>
+          <li className="d-flex align-items-center">
+            <small>5d</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </motion.div>
+</div>;
+//

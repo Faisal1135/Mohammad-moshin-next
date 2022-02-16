@@ -37,8 +37,8 @@ const Caroslider = () => {
             <Carousel variant="dark">
               <Carousel.Item>
                 <Image
-                  className={`d-block w-100`}
-                  src="https://source.unsplash.com/random"
+                  className={`d-block ratio ratio-16x9`}
+                  src="/images/10L.jpg"
                   alt="First slide"
                   height="600px"
                 />
@@ -51,8 +51,8 @@ const Caroslider = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  className="d-block  w-100"
-                  src="https://images.unsplash.com/photo-1606926730770-218d179a690e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  className="d-block ratio ratio-16x9"
+                  src="/images/flag.jpg"
                   alt="Second slide"
                   height="600px"
                 />
@@ -65,8 +65,8 @@ const Caroslider = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <Image
-                  className="d-block  w-100"
-                  src="https://images.unsplash.com/photo-1606926693780-ec99c3f747f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  className="d-block ratio ratio-16x9"
+                  src="/images/m1.jpg"
                   alt="Third slide"
                   height="600px"
                 />
