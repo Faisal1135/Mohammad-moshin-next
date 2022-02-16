@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Header.module.css";
 import AppBar from "../Head/MyNavbar/AppBar";
 import { motion, Variants } from "framer-motion";
+import Link from "next/link";
 
 export const staggerContainer: Variants = {
   initial: {},
@@ -72,12 +73,14 @@ const Header = () => {
           praesentium magnam id labore in placeat, autem debitis eius libero!
         </motion.p>
 
-        <motion.button
-          className={s.content_btn}
-          variants={fromLeftFade("right")}
-        >
-          Read More
-        </motion.button>
+        <Link href="/posts/" passHref>
+          <motion.button
+            className={s.content_btn}
+            variants={fromLeftFade("right")}
+          >
+            Read More
+          </motion.button>
+        </Link>
         <motion.img
           src="/images/cover.png"
           alt="feature_img"
